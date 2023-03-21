@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>..:: Proyecto 2 CRUD ::..</title>
+<link rel="stylesheet" href="./css/mis_estilos.css" />
+
+</head>
+
+<body class="margenes">
+
+<header class="contenedor_header">
+    
+        UCAMP/DWFS - Proyecto 2 CRUD 
+      
+</header>
+<main>
+
+<section>
+<article>
+<form>
+  Por favor ingrese los datos para crear un nuevo registro       
+<table border="1">
+<tr>
+<td>
+        <label for="nombreInput">Nombre</label><br>
+        <input type="text" class="txtNombre" id="nombreInput" autocomplete="off">
+        <div id="mensaje" class="mensaje" >Debe colocar el nombre por favor</div>
+</td>
+</tr>
+
+<tr>
+        <td>
+                <label for="apellidoInput">Apellido</label><br>
+                <input type="text" class="txtApellido" id="apellidoInput" autocomplete="off">
+        </td>
+</tr>
+<tr>
+        <td>
+        <button type="button" class="btn-success" onclick="agregarUsuario('mensaje')">Agregar</button>
+        <button type="reset" class="btn-success" onclick="limpiarDatos()">Limpiar</button>
+        </td>
+</tr>
+</table>
+
+</form>
+</article>
+
+<article>
+        <table class="table-registros">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                  </tr>
+                </thead>
+                <tbody id="cuerpoTabla"></tbody>
+        </table>  
+</article>
+</section>
+
+</main>
+
+<footer class="contenedor_footer">
+<span>
+Para cualquier falla en el sistema puede ponerse 
+en contacto con el adminisrador del sistema.
+ <br>
+ <a href="#">admincrud@sistemacrud.com</a>
+ </span>
+
+</footer>
+
+<script src="./js/codigo.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/***** Definiendo estilo a los enlace ******/
+a{
+    color:  rgb(5, 5, 66);
+    text-decoration: none;
+    
+    }
+    a:link{
+        color: rgb(5, 5, 66);
+    }
+    
+    a:hover{
+        color:rgb(11, 85, 244);
+        text-decoration: underline;
+    
+    }
+    
+    a:active {
+        color:red;
+        }
+    
+        a:visited {
+            color:rgb(5, 5, 66);
+    
+        }
+/******** Declarando Clases *******/
+ 
+.margenes{
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+        
+    }
+
+.contenedor_header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(5, 5, 66);
+            font-size:large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            color: white;
+            height: 100px;     
+        }
+
+
+.mensaje{
+
+    display:none;
+}
+        .contenedor_footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(117, 117, 119);
+            font-size:medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style:normal;
+            color: white;
+            height: 80px;     
+        }
+
+
+.table-registros{
+
+    
+}
