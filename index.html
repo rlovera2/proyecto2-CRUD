@@ -36,7 +36,7 @@
 </tr>
 <tr>
         <td>
-        <button type="button" class="btn-success" onclick="agregarUsuario('mensaje')">Agregar</button>
+        <button type="button" class="btn-success" onclick="agregarUsuario()">Agregar</button>
         <button type="reset" class="btn-success" onclick="limpiarDatos()">Limpiar</button>
         </td>
 </tr>
@@ -54,7 +54,7 @@
                     <th scope="col">Apellido</th>
                   </tr>
                 </thead>
-                <tbody id="cuerpoTabla"></tbody>
+                <tbody id="cuerpoTabla"><script>mostrarUsuarios();</script></tbody>
         </table>  
 </article>
 </section>
