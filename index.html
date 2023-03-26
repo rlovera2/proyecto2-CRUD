@@ -13,48 +13,65 @@
         UCAMP/DWFS - Proyecto 2 CRUD 
       
 </header>
-<main>
+<main class="contenedor_principal">
 
 <section>
 <article>
 <form>
-  Por favor ingrese los datos para crear un nuevo registro       
-<table border="1">
+        <br>
+ <p class="texto"> Por favor ingrese los datos para crear un nuevo registro. </p>
+  <br> 
+<table>
+        
 <tr>
-<td>
-        <label for="nombreInput">Nombre</label><br>
-        <input type="text" class="txtNombre" id="nombreInput" autocomplete="off">
-        <div id="mensaje" class="mensaje" >Debe colocar el nombre por favor</div>
-</td>
+        <td>
+                <label for="idInput" class="etiquetas">&nbsp;ID</label>
+                <input type="text" class="campos" id="idInput" autocomplete="off" disabled>
+        </td>
 </tr>
 
 <tr>
         <td>
-                <label for="apellidoInput">Apellido</label><br>
-                <input type="text" class="txtApellido" id="apellidoInput" autocomplete="off">
+                <label for="nombreInput" class="etiquetas">&nbsp;Nombre</label><br>
+                <input type="text" class="campos" id="nombreInput" autocomplete="off">
+                <div id="mensaje_nombre" class="mensaje">Por favor ingrese el nombre, gracias</div>
         </td>
 </tr>
+
 <tr>
         <td>
-        <button type="button" class="btn-success" onclick="agregarUsuario()">Agregar</button>
-        <button type="reset" class="btn-success" onclick="limpiarDatos()">Limpiar</button>
+                <label for="apellidoInput" class="etiquetas">&nbsp;Apellido</label><br>
+                <input type="text" class="campos" id="apellidoInput" autocomplete="off">
+                <div id="mensaje_apellido" class="mensaje">Por favor ingrese el apellido, gracias</div>
+        </td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+        <td>
+        <button type="button" class="botones" id="btnActualizar"  onclick="actualizarUsuario()" style="display: none">Actualizar</button>
+        <button type="button" class="botones" id="btnAgregar" onclick="agregarUsuario()">Agregar</button>
+        <button type="reset"  class="botones" id="btnEliminar" onclick="limpiarDatos()">Limpiar</button>
         </td>
 </tr>
 </table>
 
 </form>
+<br>
+<hr class="linea_divisoria">
+<br>
 </article>
 
-<article>
-        <table class="table-registros">
+<article class="table-registros">
+        <table>
                 <thead>
                   <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Apellido</th>
+                    <th scope="col" class="titulo_columnas_tabla">Id</th>
+                    <th scope="col" class="titulo_columnas_tabla">Nombre</th>
+                    <th scope="col" class="titulo_columnas_tabla">Apellido</th>
+                    <th scope="col" class="titulo_columnas_tabla">Operaciones</th>
                   </tr>
                 </thead>
-                <tbody id="cuerpoTabla"><script>mostrarUsuarios();</script></tbody>
+                <tbody  id="cuerpoTabla"></tbody>
         </table>  
 </article>
 </section>

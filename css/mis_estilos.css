@@ -1,4 +1,7 @@
-/***** Definiendo estilo a los enlace ******/
+/*****************************************************/
+/*********** Definiendo estilo a los enlace **********/
+/*****************************************************/
+
 a{
     color:  rgb(5, 5, 66);
     text-decoration: none;
@@ -22,8 +25,13 @@ a{
             color:rgb(5, 5, 66);
     
         }
-/******** Declarando Clases *******/
- 
+
+
+/*****************************************************/
+/***************** Declarando Clases *****************/
+/*****************************************************/
+
+
 .margenes{
             margin-top: 0%;
             margin-bottom: 0%;
@@ -31,6 +39,15 @@ a{
             margin-right: 0%;
         
     }
+
+ .texto{
+    font-size: medium;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+
+
+ }   
 
 .contenedor_header{
             display: flex;
@@ -45,11 +62,93 @@ a{
         }
 
 
-.mensaje{
+.etiquetas{
+    display: flex;
+    align-items: center;
+    background-color: rgb(5, 5, 66);
+    font-size:medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: white;
+    height: 30px;     
 
-    display:none;
 }
-        .contenedor_footer{
+
+
+.campos{
+    display: flex;
+    align-items:center;
+    width: 300px;
+    font-size:medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: black;
+    
+
+}
+
+.botones{
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: white;
+    border-radius: 5px;
+    
+
+}
+
+
+.mensaje{
+    display:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size:medium;
+    color: rgb(245, 52, 52);
+
+}
+
+.linea_divisoria{
+
+    width: 90%;
+    align-items: center;
+    border: 1px solid rgb(5, 5, 66);
+    
+}
+
+.contenedor_principal{
+
+    display: flex;
+    flex-flow:wrap;
+    justify-content:space-evenly;
+
+}
+
+.titulo_columnas_tabla{
+
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size:medium;
+    color: white;
+}
+
+
+
+.table-registros{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size:small;
+}
+
+.registros{
+
+    background-color: rgb(226, 234, 255);
+}
+
+
+.contenedor_footer{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -59,10 +158,72 @@ a{
             font-style:normal;
             color: white;
             height: 80px;     
-        }
+}
 
 
-.table-registros{
 
-    
+/***********************************************/
+/******************* Media Queries *************/
+/***********************************************/
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media only screen and (max-width: 1400px) {
+    .menu {
+        background-color: rgb(5, 5, 66);
+    }
+   
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+    .menu {
+        background-color: rgb(24, 3, 50);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+    main{
+
+        display: flex;
+        flex-flow:wrap;
+        justify-content:space-evenly;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    main{
+
+        display: flex;
+        flex-flow:wrap;
+        justify-content:space-evenly;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+
+    main{
+
+        display: flex;
+        flex-flow:wrap;
+        justify-content:space-evenly;
+    }
+
+}
+
+/*X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 320px) {
+
+    main{
+
+        display: flex;
+        flex-flow:wrap;
+        justify-content:space-evenly;
+    }
 }
