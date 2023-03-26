@@ -18,18 +18,29 @@ const agregarUsuario = () => {
         document.getElementById("nombreInput").focus();
     } 
     
+    else if(document.getElementById("nombreInput").value.length < 3 ){
+      // alert("Por favor ingrese el nombre, gracias.");
+       mensaje_nombre.style.display = "inline";
+       document.getElementById("nombreInput").focus();
+   } 
     else if(document.getElementById("apellidoInput").value==""){
         //alert("Por favor ingrese el apellido, gracias.");
         mensaje_nombre.style.display = "none";
         mensaje_apellido.style.display = "inline";
         document.getElementById("apellidoInput").focus();
+    }
+    else if(document.getElementById("apellidoInput").value.length < 3){
+          //alert("Por favor ingrese el apellido, gracias.");
+          mensaje_nombre.style.display = "none";
+          mensaje_apellido.style.display = "inline";
+          document.getElementById("apellidoInput").focus();     
     } else{
         mensaje_nombre.style.display = "none";
         mensaje_apellido.style.display = "none";
         contador = contador + 1;
         const usuario = {
-          //id: crypto.randomUUID(),
-          id: JSON.stringify(contador),
+          id: crypto.randomUUID(),
+          //id: JSON.stringify(contador),
           nombre: nombre.value,
           apellido: apellido.value,
         };
@@ -44,6 +55,28 @@ const agregarUsuario = () => {
     }
   
 };
+
+const textoInput = () => {
+    
+    let x=document.getElementById("nombreInput").value.length;
+    let cadena="";
+    caracteres=["0","1","2","3","4","5","6","7","8","9","@",".","/"];
+    
+    cadena=document.getElementById("nombreInput").replace(/[0-9]+/g, "");
+    alert(cadena);
+
+  //   for (let i = 0; i < x; i++) {
+  //     if(texto.value.trim().charAt(i) == caracteres[i]){
+  //       caracter=;
+  //       cadena=cadena+caracter;
+  //       alert(texto.value.trim().charAt(i));
+  //     }
+    
+  // }
+  // document.getElementById("nombreInput").value = cadena;
+  
+};
+
 
 const editarUsuario = (id,nombre,apellido) => {
     btnAgregar.style.display = "none";
