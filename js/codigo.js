@@ -63,7 +63,7 @@ const textoInput = () => {
     caracteres=["0","1","2","3","4","5","6","7","8","9","@",".","/"];
     
     cadena=document.getElementById("nombreInput").replace(/[0-9]+/g, "");
-    alert(cadena);
+  //  alert(cadena);
 
   //   for (let i = 0; i < x; i++) {
   //     if(texto.value.trim().charAt(i) == caracteres[i]){
