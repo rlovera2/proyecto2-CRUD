@@ -147,6 +147,10 @@ a{
     background-color: rgb(226, 234, 255);
 }
 
+#registro{
+    background-color: pink;
+}
+
 
 .contenedor_footer{
             display: flex;

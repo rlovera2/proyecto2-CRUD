@@ -1,0 +1,32 @@
+<html>
+<head>
+    <!--<script src="./js/codigo.js"></script>-->
+    
+    <script >
+
+    const cambiar_color_over = (fila) => {
+        //fila.style.backgroundColor ="Pink"; 
+    document.getElementById("registro").style.backgroundColor ="Pink";
+      
+   };
+   
+   
+   const cambiar_color_out = (fila) => {
+    // fila.style.backgroundColor ="rgb(226, 234, 255)"; 
+     document.getElementById("registro").style.backgroundColor ="rgb(226, 234, 255)";
+   };
+</script>
+</head>
+<body>
+<table border="1">
+<tr id="registro" onmouseover="cambiar_color_over('registro')" onmouseout="cambiar_color_out('registro')">
+    <th >1</th>
+    <td>2</td>
+    <td>3</td>
+</tr>
+
+</table>
+
+
+</body>
+</html>
